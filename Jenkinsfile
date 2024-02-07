@@ -19,9 +19,9 @@ pipeline {
 
          booleanParam(name: 'Deploy', defaultValue: false, description: 'Toggle this value')
 
-         choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
+        // choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
 
-         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+        // password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
      }
     // build
     stages {
@@ -88,7 +88,7 @@ pipeline {
 
             when {
                 expression{
-                params.Deploy == true
+                params.Deploy == 'true'
                 }
             }
             steps {
