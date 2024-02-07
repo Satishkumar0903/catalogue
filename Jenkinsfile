@@ -1,5 +1,5 @@
 #!groovy
-@Library('robo_shop-shared-libraries') _
+@Library('robo_shop_shared_libraries') _
 
 // responsibility to pass what type of application and component is this to pipeline deicssion
 
