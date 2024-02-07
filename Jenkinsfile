@@ -40,6 +40,7 @@ pipeline {
                     npm install
                 """
             }
+        }
         stage('Unit tests') {
             steps {
                 sh """
@@ -54,7 +55,7 @@ pipeline {
                 """
             }
         }
-        }
+        
         stage('Build') {
             steps {
                 sh """
